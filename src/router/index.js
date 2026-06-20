@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import DashboardView from '../views/DashboardView.vue'
 import SamplingWindowsView from '../views/SamplingWindowsView.vue'
 import RecordsView from '../views/RecordsView.vue'
+import WorkloadView from '../views/WorkloadView.vue'
 
 const routes = [
   {
@@ -27,6 +28,14 @@ const routes = [
     component: RecordsView,
     meta: {
       title: '检疫记录',
+    },
+  },
+  {
+    path: '/workload',
+    name: 'workload',
+    component: WorkloadView,
+    meta: {
+      title: '班组负载',
     },
   },
 ]
